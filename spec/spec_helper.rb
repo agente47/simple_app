@@ -38,5 +38,12 @@ RSpec.configure do |config|
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
   #     --seed 1234
+  Rspec.configure do |config|
+
+
+    config.include Capybara::DSL
+  end
+  
+
   config.order = "random"
 end
